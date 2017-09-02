@@ -1,0 +1,14 @@
+<div>
+	<span>First Name: </span>
+	<input type="text" class="form-control" ng-model="vm.name.first" />
+
+	<span>Last Name: </span>
+	<input type="text" class="form-control" ng-model="vm.name.last" />
+
+	<br />
+	<button type="button" class="btn" ng-click="vm.submit()">Submit</button>
+	<hr />
+
+	<span>YOUR NAME IS {{ vm.fullName }}</span>
+	</div>
+</div>

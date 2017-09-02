@@ -1,0 +1,22 @@
+<div class="row">
+	<span>Set a Timer: </span>
+	<input type="text" class="form-control" ng-model="vm.other.timerText" />
+	<button type="button" class="btn" ng-click="vm.toggleTimer()">Toggle Timer</button>
+	<span>Total Time: {{vm.other.totalTimer}}</span>
+
+	<br />
+	<hr />
+
+	<span>Timer: </span>
+	<input type="text" class="form-control" ng-model="vm.other.countdownText" />
+	<button type="button" class="btn" ng-click="vm.startTimer()" ng-disabled="vm.other.countdownRunning">Start TImer</button>
+	<span>Countdown Time: {{vm.other.remainingTime}}</span>
+
+	<br />
+	<hr />
+
+	<span>Clock: </span>
+	<button type="button" class="btn" ng-click="vm.startClock()">Start Clock</button>
+	<p>{{ vm.clock  | date:'medium'}}</p>
+	</div>
+</div>
