@@ -18,9 +18,9 @@
 				template: '<home></home>'
 			},
 			 {
-			 	name: 'other',
-			 	url: '/other',
-			 	template: '<other-home></other-home>'
+			 	name: 'timers',
+			 	url: '/timers',
+			 	template: '<timers></timers>'
 			}
 			//,
 			// {

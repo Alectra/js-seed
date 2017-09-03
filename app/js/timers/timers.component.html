@@ -1,0 +1,35 @@
+<div>
+	<span>Set a Timer: </span>
+	<input type="text" class="form-control" ng-model="vm.timers.timerText" />
+	<br />
+	<button type="button" class="btn" ng-click="vm.toggleTimer()">Toggle Timer</button>
+	<button type="button" class="btn" ng-click="vm.resetOtherTimer()">Reset</button>
+	<span>Total Time: {{vm.timers.timer}}</span>
+
+	<br />
+	<hr />
+
+	<span>Count Down Timer: </span>
+	<input type="text" class="form-control" ng-model="vm.timers.countdownText" />
+	<br />
+	<button type="button" class="btn" ng-click="vm.startCountdown()" ng-disabled="vm.timers.countdownRunning">Start TImer</button>
+	<span>Countdown Time: {{vm.timers.countdownRemainingTime}}</span>
+
+	<!--<br />
+	<hr />
+
+	<span>Count Up Timer: </span>
+	<input type="text" class="form-control" ng-model="vm.timers.countupText" />
+	<br />
+	<button type="button" class="btn" ng-click="vm.startCountup()" ng-disabled="vm.timers.countupRunning">Start TImer</button>
+	<span>Countup Time: {{vm.timers.countupRemainingTime}}</span>-->
+
+	<br />
+	<hr />
+
+	<span>Clock: </span>
+	<br />
+	<button type="button" class="btn" ng-click="vm.startClock()" ng-disabled="vm.timers.clockRunning">Start Clock</button>
+	<p>{{ vm.timers.clock  | date:'medium'}}</p>
+	</div>
+</div>

@@ -36,11 +36,6 @@
 			return name;
 		};
 
-		var timer = 0;
-		self.startOtherTimer = function (val) {
-			timer = val;
-			return timer;
-		};
 		self.stopOtherTimer = function () {
 			timer = 50;
 			return timer;
@@ -53,27 +48,6 @@
 			return countdown;
 		};
 
-		var clock = 'loading clock...';
-		self.startClock = function () {
-			TimeCtrl();
-			return clock;
-		}
-		this.ChangeTest = function (data) {
-        $interval(function () {
-            if (data.Test == 'Test') data.Test = 'Changed Test';
-            else data.Test = 'Test';
-        },500);
-    }
-		var TimeCtrl = function () {
-			// clock = "loading clock..."; // initialise the time variable
-			var tickInterval = 1000; //ms
-			var tick = function () {
-				clock = Date.now(); // get the current time
-				$timeout(tick, tickInterval); // reset the timer
-			}
 
-			// Start the timer
-			$timeout(tick, tickInterval);
-		};
 	});
 })();
